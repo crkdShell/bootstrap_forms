@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Document</title>
+  <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/vendor/bootstrap.css">
+  <link rel="stylesheet" href="css/vendor/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<!-- Forms with server side validation and jQuery UI -->
+
+<nav class="navbar" >
+  <div class="container">
+    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Forms</a>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Forms</h1>
+    <h2>Requirements:</h2>
+    <ul>
+        <li><p>JS Library: <a href="https://jquery.com/">jQuery</a></p></li>
+        <li><p>Framework: <a href="http://getbootstrap.com/">Bootstrap</a></p></li>
+        <li><p>User Interface: <a href="https://jqueryui.com/">jQueryUI</a></p></li>
+        <li><p>Client Side Validation: <a href="https://jqueryvalidation.org/">jQuery Validation Plugin</a></p></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <!-- NOTES FROM AUTHOR -->
+  <section>
+    <div class="row">
+    <div class="col-sm-12 col-md-6 vertical">
+      <h2>NOTES:</h2>
+      <p>Remember to include server side validation.</p>
+      <p>Tested on Chrome</p>
+      <p>General jQuery Validate Practice</p>
+      <p>HTML & CSS Validated</p>
+      <p>Project Author: Nikki Lawrence | March 13, 2017</p>
+      <p>Website: <a href="http://crkdshell.com/">crkdshell.com</a></p>
+      <p>Github: <a href="https://github.com/crkdshell">Repositories</a></p>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <h2>FORM LAYOUTS</h2>
+    <div class="row">
+
+      <!-- VERTICAL FORM -->
+      <div class="col-sm-12 col-md-6 vertical">
+        <h3>Vertical Form</h3>
+        <form id="form_1" method="post" action="#">
+          <div class="form-group">
+              <label for="email_1">Email </label>
+              <input type="email" class="form-control" id="email_1" name="email_1" placeholder="Email">
+          </div>
+          <div class="form-group">
+              <label for="password_1">Password </label>
+              <input type="password" class="form-control" id="password_1" name="password_1" placeholder="Password">
+          </div>
+          <div class="checkbox">
+              <label for="check_1"><input type="checkbox" id="check_1" name="check_1"> Remember me</label>
+          </div>
+          <div>
+            <input type="submit" name="submit_1" id="submit_1" class="btn" value="Login">
+          </div>
+        </form>
+      </div> <!-- END COL -->
+
+      <!-- HORIZONTAL FORM -->
+      <div class="col-sm-12 col-md-6">
+        <h3>Horizontal Form</h3>
+        <form class="form-horizontal" id="form_2" method="post" action="#">
+            <div class="form-group">
+                <label for="email_2" class="control-label col-xs-3">Email</label>
+                <div class="col-xs-9">
+                    <input type="email" class="form-control" id="email_2" name="email_2" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password_2" class="control-label col-xs-3">Password</label>
+                <div class="col-xs-9">
+                    <input type="password" class="form-control" id="password_2" name="password_2" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-3 col-xs-9">
+                    <div class="checkbox">
+                        <label for="check_2"><input type="checkbox" id="check_2" name="check_2"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <input type="submit" name="submit_2" id="submit_2" class="btn" value="Login">
+                </div>
+            </div>
+        </form>
+      </div> <!-- END COL -->
+    </div> <!-- END ROW -->
+
+    <div class="row">
+      <!-- INLINE FORM -->
+      <div class="col-sm-12 col-md-12">
+        <h3>Inline Form</h3>
+        <form class="form-inline" id="form_3" method="post" action="#">
+            <div class="form-group">
+                <label class="sr-only" for="email_3">Email</label>
+                <input type="email" class="form-control" id="email_3" name="email_3" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="password_3">Password</label>
+                <input type="password" class="form-control" id="password_3" name="password_3" placeholder="Password">
+            </div>
+            <div class="checkbox">
+                <label for="check_3"><input type="checkbox" id="check_3" name="check_3"> Remember me</label>
+            </div>
+              <input type="submit" name="submit_3" id="submit_3" class="btn" value="Login">
+              <br>
+              <span class="place_error"></span>
+        </form>
+      </div><!-- END COL -->
+    </div> <!-- END ROW -->
+
+  </section> <!-- END SECTION-->
+
+
+  <section>
+    <h2>FULL FORM</h2>
+    <div class="row form_template">
+      <div class="col-md-8">
+          <h3 class="full_h3">Sign Up</h3>
+          <form class="form-horizontal" id="form_4" method="post" action="#">
+            <div class="form-group">
+                <label class="control-label col-xs-3" for="username_4">Username:</label>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control" id="username_4" name="username_4" placeholder="Username" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-3" for="email_4">Email:</label>
+                <div class="col-xs-9">
+                    <input type="email" class="form-control" id="email_4" name="email_4" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-3" for="password_4">Password:</label>
+                <div class="col-xs-9">
+                    <input type="password" class="form-control" id="password_4" name="password_4" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-3" for="confirmPassword_4">Confirm Password:</label>
+                <div class="col-xs-9">
+                    <input type="password" class="form-control" id="confirmPassword_4" name="confirmPassword_4" placeholder="Confirm Password">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-3" for="firstName_4">First Name:</label>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control" id="firstName_4" name="firstName_4" placeholder="First Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-3" for="lastName_4">Last Name:</label>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control" id="lastName_4" name="lastName_4" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-3" for="phoneNumber_4">Phone:</label>
+                <div class="col-xs-9">
+                    <input type="tel" class="form-control" id="phoneNumber_4" name="phoneNumber_4" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-3">Date of Birth:</label>
+                <div class="col-xs-9">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="datepicker"  name="dob_4" placeholder="Select Date">
+                    <span class="input-group-addon" id="c_btn" style="cursor:pointer;"><span class="glyphicon glyphicon-calendar"></span></span>
+                  </div>
+                  <div></div> <!-- error -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-3" for="address_4">Address:</label>
+                <div class="col-xs-9">
+                    <textarea rows="3" class="form-control" id="address_4" name="address_4" placeholder="Postal Address"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-3" for="postalCode_4">Postal Code:</label>
+                <div class="col-xs-9">
+                    <input type="text" class="form-control" id="postalCode_4" name="postalCode_4" placeholder="Postal Code">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                  <label class="control-label col-xs-3" >Gender:</label>
+
+                  <div class="col-xs-4 gender">
+                    <label for="radio-1">Female</label>
+                    <input type="radio" name="genderRadios_4" value="female" id="radio-1">
+                  </div>
+                  <div class="col-xs-4 gender">
+                    <label for="radio-2">Male</label>
+                    <input type="radio" name="genderRadios_4" value="male" id="radio-2">
+                  </div>
+                </div>
+                <div class="col-xs-3"></div>
+                <div class="col-xs-4">
+                  <div class="radioE"></div>
+                </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-offset-3 col-xs-9">
+                  <label class="checkbox-inline" for="news_4">
+                      <input type="checkbox" value="news" id="news_4" name="news_4"> Send me latest news and updates.
+                  </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-offset-3 col-xs-9">
+                  <label class="checkbox-inline" for="terms_4">
+                      <input type="checkbox" value="agree" id="terms_4" name="terms_4">I agree to the <a href="#">Terms and Conditions</a>.
+                  </label>
+              </div>
+              <div class="col-xs-3"></div>
+              <div class="col-xs-4">
+                <div class="checkE"></div>
+              </div>
+            </div>
+              <br>
+              <div class="form-group">
+                <div class="col-xs-offset-3 col-xs-9">
+                    <input type="submit" name="submit_4" id="submit_4" class="btn" value="Sign up">
+                    <input type="reset" name="reset_4" id="reset_4" class="btn" value="Reset">
+                </div>
+              </div>
+          </form>
+      </div> <!-- END COL -->
+    </div> <!-- END ROW -->
+
+  </section> <!-- END SECTION-->
+
+</div> <!-- End container  -->
+
+<!-- JS -->
+<script src="js/vendor/jquery-3.1.1.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/jquery-ui.min.js"></script>
+<script src="js/vendor/jquery.validate.min.js"></script>
+<script src="js/vendor/jquery.additional-methods.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
