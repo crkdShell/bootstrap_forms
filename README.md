@@ -12,17 +12,17 @@
 * JS scripts and CSS links **Order Matters!
 
 ## CSS:
-* <link rel="stylesheet" href="css/vendor/bootstrap.css">
-* <link rel="stylesheet" href="css/vendor/jquery-ui.min.css">
-* <link rel="stylesheet" href="css/main.css">
+* css/vendor/bootstrap.css
+* css/vendor/jquery-ui.min.css
+* css/main.css">
 
 ## JS:
-* <script src="js/vendor/jquery-3.1.1.min.js"></script>
-* <script src="js/vendor/bootstrap.min.js"></script>
-* <script src="js/vendor/jquery-ui.min.js"></script>
-* <script src="js/vendor/jquery.validate.min.js"></script>
-* <script src="js/vendor/jquery.additional-methods.min.js"></script>
-* <script src="js/main.js"></script>
+* js/vendor/jquery-3.1.1.min.js
+* js/vendor/bootstrap.min.js
+* js/vendor/jquery-ui.min.js
+* js/vendor/jquery.validate.min.js
+* js/vendor/jquery.additional-methods.min.js
+* js/main.js
 
 ## Notes:
 * Always remember to include server side validation.
