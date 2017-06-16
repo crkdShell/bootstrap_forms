@@ -14,7 +14,7 @@
 ## CSS:
 * css/vendor/bootstrap.css
 * css/vendor/jquery-ui.min.css
-* css/main.css">
+* css/main.css
 
 ## JS:
 * js/vendor/jquery-3.1.1.min.js
